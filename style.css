@@ -3,7 +3,10 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+
   min-height: 100vh;
   background: url("/images/background.jpg") center / cover no-repeat;
 
@@ -14,10 +17,116 @@ body {
   position: relative;
 }
 
-header {
+main {
   display: flex;
-  background-color: white;
-  opacity: 0.5;
-  width: 100%;
-  justify-content: space-between;
+  flex: 1;
+  align-content: flex-start;
+  background-color: rgba(207, 225, 255, 0.8);
+  border-radius: 6px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Bangers", system-ui;
+  font-size: 40px;
+}
+
+h2 {
+  display: flex;
+  text-align: flex-start;
+  font-size: 30px;
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+}
+
+.container_nav {
+  display: flex;
+  background-color: rgb(207, 225, 255);
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.container_nav div {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.container_nav div a {
+  text-decoration: none;
+  color: black;
+}
+
+.container_nav div:hover {
+  background-color: #6f9dec;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container_main img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.Kobe {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.list {
+  margin-bottom: 120px;
+}
+
+.list ul {
+  list-style-position: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.list li {
+  font-size: 20px;
+  color: black;
+  line-height: 1.8;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  margin: 0;
+}
+
+.container_footer img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
