@@ -48,6 +48,7 @@ p {
 
 .container_nav {
   display: flex;
+  justify-content: center;
   background-color: rgb(207, 225, 255);
   border-radius: 6px;
   opacity: 0.8;
@@ -67,7 +68,7 @@ p {
 }
 
 .container_nav div:hover {
-  background-color: #6f9dec;
+  background-color: #0b98b7;
   border-radius: 6px;
   padding: 10px;
 }
@@ -75,9 +76,32 @@ p {
 .container_main {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+th {
+  background-color: #077d97;
+  color: white;
 }
 
 .container_main img {
@@ -88,13 +112,17 @@ p {
 
 .Kobe {
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
-  margin-top: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .list {
-  margin-bottom: 120px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .list ul {
@@ -139,12 +167,4 @@ p {
 
 .form {
   text-align: center;
-}
-
-th,
-td {
-  padding: 15px;
-  border: 3px solid rgb(255, 255, 255);
-  text-align: center;
-  font-size: 16px;
 }
